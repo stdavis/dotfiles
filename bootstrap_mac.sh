@@ -19,7 +19,7 @@ echo "installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "installing apps with brew cask"
-brew cask install alfred google-chrome visual-studio-code spotify dropbox
+brew cask install alfred google-chrome visual-studio-code spotify dropbox rectangle
 
 echo "making system modifications:"
 
