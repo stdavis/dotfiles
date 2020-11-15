@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# copied from https://github.com/kentcdodds/dotfiles/blob/master/.macos
+# inspired by https://github.com/kentcdodds/dotfiles/blob/master/.macos
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
