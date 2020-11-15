@@ -21,6 +21,9 @@ echo "installing homebrew"
 echo "installing apps with brew cask"
 brew cask install alfred google-chrome visual-studio-code spotify dropbox rectangle
 
+#: quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize qlvideo
+
 echo "making system modifications:"
 
 # Save to disk (not to iCloud) by default
