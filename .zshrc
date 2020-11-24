@@ -1,5 +1,4 @@
 alias python='python3'
-export PATH=$HOME/Library/Python/3.7/bin:$PATH
 
 export GIT_EDITOR=vim
 export PATH="/usr/local/opt/ruby/bin:$PATH"
