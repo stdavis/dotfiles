@@ -8,7 +8,7 @@ nvm alias default 'lts/*'
 
 # dev apps
 echo "installing developer apps via brew"
-brew install python zsh zsh-autosuggestions
+brew install python zsh zsh-autosuggestions git
 brew cask install visual-studio-code
 
 # make zsh default shell
