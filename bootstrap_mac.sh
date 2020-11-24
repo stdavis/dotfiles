@@ -19,7 +19,7 @@ echo "installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "installing apps with brew cask"
-brew cask install alfred google-chrome visual-studio-code spotify dropbox rectangle
+brew cask install alfred google-chrome spotify dropbox rectangle
 
 #: quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize qlvideo
