@@ -4,7 +4,7 @@ export GIT_EDITOR=vim
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/stdavis/.oh-my-zsh"
+export ZSH="/Users/$(whoami)/.oh-my-zsh"
 
 # Set Spaceship ZSH as a prompt
 autoload -U promptinit; promptinit
