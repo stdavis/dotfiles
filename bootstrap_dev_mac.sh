@@ -9,7 +9,7 @@ nvm alias default 'lts/*'
 # dev apps
 echo "installing developer apps via brew"
 brew install python zsh zsh-autosuggestions git inkscape dbeaver-community
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 
 # make zsh default shell
 cp ./.zshrc ~/.zshrc
