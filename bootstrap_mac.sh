@@ -20,6 +20,7 @@ echo "installing homebrew"
 
 echo "installing apps with brew cask"
 brew cask install alfred google-chrome spotify dropbox rectangle vlc
+brew install bitwarden bitwarden-cli
 
 #: quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize qlvideo
