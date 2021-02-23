@@ -1,10 +1,10 @@
 {
   "name": "@stdavis/dotfiles",
   "description": "bootstrap and keep up-to-date my macOS machines",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "author": "Scott Davis (stdavis@utah.gov)",
   "bin": {
-    "dotfiles": "./bin/run"
+    "dotfiles": "bin/run"
   },
   "bugs": "https://github.com/stdavis/dotfiles/issues",
   "devDependencies": {
