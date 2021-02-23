@@ -4,7 +4,7 @@ const {execSync} = require('child_process')
 class UpgradeCommand extends Command {
   run() {
     this.log('upgrading this project to the latest version...')
-    execSync('npm install @stdavis/dotfiles@latest -g', {
+    execSync('npm install -g @stdavis/dotfiles@latest', {
       stdio: 'inherit',
     })
   }
