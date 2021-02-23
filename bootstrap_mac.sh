@@ -19,11 +19,11 @@ echo "installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "installing apps with brew cask"
-brew cask install alfred google-chrome spotify dropbox rectangle vlc
+brew install --cask alfred google-chrome spotify dropbox rectangle vlc grandperspective
 brew install bitwarden bitwarden-cli
 
 #: quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize qlvideo
+brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize qlvideo
 
 echo "making system modifications:"
 
