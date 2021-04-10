@@ -26,3 +26,6 @@ npm install -g spaceship-prompt
 echo "installing fonts"
 brew tap homebrew/cask-fonts
 brew cask install font-fira-code
+
+echo "setting up key repeat for vscode"
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
