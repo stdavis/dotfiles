@@ -1,10 +1,9 @@
 bash ./bootstrap_mac.sh
 
-# nvm
-echo "installing nvm"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-nvm install 'lts/*'
-nvm alias default 'lts/*'
+# fnm
+echo "installing fnm"
+curl -fsSL https://fnm.vercel.app/install | bash
+fnm install --lts
 
 # dev apps
 echo "installing developer apps via brew"
