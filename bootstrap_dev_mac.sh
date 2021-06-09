@@ -23,7 +23,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 echo "installing fonts"
 brew tap homebrew/cask-fonts
-brew cask install font-fira-code
+brew install --cask font-fira-code font-fira-code-nerd-font
 
 echo "setting up key repeat for vscode"
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
