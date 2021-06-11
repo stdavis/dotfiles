@@ -21,6 +21,16 @@
   "engines": {
     "node": ">=14.0.0"
   },
+  "eslintConfig": {
+    "extends": "prettier",
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    }
+  },
   "files": [
     "/bin",
     "/npm-shrinkwrap.json",
