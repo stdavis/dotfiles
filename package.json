@@ -7,11 +7,16 @@
     "dotfiles": "bin/run"
   },
   "bugs": "https://github.com/stdavis/dotfiles/issues",
+  "dependencies": {
+    "@oclif/command": "^1.8.0",
+    "@oclif/config": "^1.17.0",
+    "@oclif/plugin-help": "^3.2.2"
+  },
   "devDependencies": {
     "@oclif/dev-cli": "^1.26.0",
-    "eslint": "^5.16.0",
+    "eslint": "^7.28.0",
     "eslint-config-oclif": "^3.1.0",
-    "globby": "^10.0.2"
+    "globby": "^11.0.3"
   },
   "engines": {
     "node": ">=14.0.0"
@@ -42,10 +47,5 @@
     "prepack": "oclif-dev manifest && oclif-dev readme",
     "test": "echo NO TESTS",
     "version": "oclif-dev readme && git add README.md"
-  },
-  "dependencies": {
-    "@oclif/command": "^1.8.0",
-    "@oclif/config": "^1.17.0",
-    "@oclif/plugin-help": "^3.2.2"
   }
 }
