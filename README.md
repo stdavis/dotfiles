@@ -17,6 +17,10 @@ USAGE
 
 ## Development Notes
 
+### Running development version
+
+`./bin/run`
+
 ### Finding macOS preference plist settings
 
 1. Open `~/Library/Preferences` and switch to list view
