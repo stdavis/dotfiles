@@ -8,10 +8,18 @@ osascript -e 'tell application "System Preferences" to quit'
 
 echo "Hello $(whoami)! Let's get you set up."
 
+if [ $1 = "1" ] ; then
+  slim=true
+fi
+
+if [[ "$slim" = "true" ]] ; then
+  echo "running slim version"
+fi
+
 # Ask for the administrator password upfront
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+# Keep-alive: update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 echo "installing homebrew"
@@ -21,6 +29,11 @@ echo "installing homebrew"
 echo "installing apps with brew cask"
 brew install --cask alfred google-chrome spotify dropbox rectangle vlc grandperspective
 brew install bitwarden bitwarden-cli
+
+if [[ "$slim" != "true" ]] ; then
+  echo "installing larger apps"
+  brew install --cask vlc
+fi
 
 #: quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize qlvideo

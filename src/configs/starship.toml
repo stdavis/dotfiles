@@ -1,0 +1,8 @@
+scan_timeout = 60
+command_timeout = 2000
+
+[gcloud]
+disabled = true
+
+[nodejs]
+symbol = "⬢ "
