@@ -41,6 +41,7 @@ brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize 
 #: fix qlstephen permission issues
 #: https://github.com/whomwah/qlstephen#permissions-quarantine
 xattr -cr ~/Library/QuickLook/QLStephen.qlgenerator
+xattr -cr ~/Library/QuickLook/QLColorCode.qlgenerator
 qlmanage -r
 qlmanage -r cache
 
