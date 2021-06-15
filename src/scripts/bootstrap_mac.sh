@@ -38,6 +38,12 @@ fi
 #: quicklook plugins: https://github.com/sindresorhus/quick-look-plugins
 brew install --cask qlcolorcode qlstephen qlmarkdown quicklook-json qlimagesize qlvideo
 
+#: fix qlstephen permission issues
+#: https://github.com/whomwah/qlstephen#permissions-quarantine
+xattr -cr ~/Library/QuickLook/QLStephen.qlgenerator
+qlmanage -r
+qlmanage -r cache
+
 echo "making system modifications:"
 
 # Save to disk (not to iCloud) by default
