@@ -33,9 +33,11 @@ ln -sfh "$SCRIPT_DIR/../configs/starship.toml" ~/.config/starship.toml
 ln -sfh "$SCRIPT_DIR/../configs/.gitconfig" ~/.gitconfig
 
 # fnm
-echo "installing fnm"
-curl -fsSL https://fnm.vercel.app/install | bash
-fnm install --lts
+if [[ -z "$FNM_DIR" ]] ; then
+  echo "installing fnm"
+  curl -fsSL https://fnm.vercel.app/install | bash
+  fnm install --lts
+fi
 
 # oh my zsh
 if [[ -z "$ZSH" ]] ; then
