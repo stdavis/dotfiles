@@ -1,5 +1,3 @@
-alias python='python3'
-
 export GIT_EDITOR=vim
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
@@ -16,11 +14,14 @@ source $ZSH/oh-my-zsh.sh
 # starship
 eval "$(starship init zsh)"
 
-# my aliases
-alias ns='npm start'
-alias zshconfig='vim ~/.zshrc'
-alias sourcez='source ~/.zshrc'
-
 # fnm
 export PATH=/Users/stdavis/.fnm:$PATH
 eval "`fnm env`"
+
+# my aliases
+alias python='python3'
+
+alias ns='npm start'
+
+alias zshconfig='vim ~/.zshrc'
+alias sourcez='source ~/.zshrc'
