@@ -14,10 +14,6 @@ source $ZSH/oh-my-zsh.sh
 # starship
 eval "$(starship init zsh)"
 
-# fnm
-export PATH=/Users/stdavis/.fnm:$PATH
-eval "`fnm env`"
-
 # my aliases
 alias python='python3'
 
@@ -25,3 +21,7 @@ alias ns='npm start'
 
 alias zshconfig='vim ~/.zshrc'
 alias sourcez='source ~/.zshrc'
+
+# fnm
+export PATH=/Users/stdavis/.fnm:$PATH
+eval "`fnm env`"
