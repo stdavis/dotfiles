@@ -51,3 +51,6 @@ chsh -s /usr/local/bin/zsh
 echo "installing fonts"
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code font-fira-code-nerd-font
+
+echo "setting up key repeat for vscode"
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
