@@ -25,11 +25,12 @@ if [[ "$slim" != "true" ]] ; then
 fi
 
 # make zsh default shell
+echo "creating symlinks to config files"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-echo "$SCRIPT_DIR/../configs/.zshrc"
 ln -sfh "$SCRIPT_DIR/../configs/.zshrc" ~/.zshrc
 mkdir ~/.config
 ln -sfh "$SCRIPT_DIR/../configs/starship.toml" ~/.config/starship.toml
+ln -sfh "$SCRIPT_DIR/../configs/.gitconfig" ~/.gitconfig
 
 # fnm
 echo "installing fnm"

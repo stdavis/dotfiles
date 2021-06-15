@@ -1,0 +1,52 @@
+[user]
+    name = stdavis
+    email = stdavis@utah.gov
+    signingkey = 4B641852B46B371D
+[core]
+    editor = /usr/local/bin/vim
+    autocrlf = input
+[credential]
+[push]
+    default = simple
+[fetch]
+    prune = true
+[rebase]
+    autoSquash = true
+    autoStash = true
+[mergetool]
+    keepBackup = false
+[diff]
+    compactionHeuristic = true
+[commit]
+    gpgsign = true
+[gpg]
+    program = /usr/local/bin/gpg
+[alias]
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+    s = status
+    all = add --all :/
+    amend = commit --amend
+    publish = !git push origin $@ && git push origin --tags
+    up = !git pull --rebase --prune $@ && git submodule update --init --recursive
+    ec = config --global -e
+    cob = checkout -b
+    uc = reset --soft HEAD~1
+    undo = reset HEAD~1 --mixed
+    wip = !git add -u && git commit -m ":warning:"
+    pr  = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1 && git checkout pr/$1; }; f"
+    pr-clean = "!git for-each-ref refs/heads/pr/* --format='%(refname)' | while read ref ; do branch=${ref#refs/heads/} ; git branch -D $branch ; done"
+    # use open for osx or explorer for windows
+    open = !open `git config remote.origin.url`
+    browse = !git open
+[credential]
+    helper = osxkeychain
+    helper =
+    helper = /usr/local/share/gcm-core/git-credential-manager-core
+[pull]
+    rebase = true
+[init]
+    defaultBranch = main
+[pager]
+    branch = false
+[credential "https://dev.azure.com"]
+    useHttpPath = true
