@@ -6,8 +6,8 @@ brew upgrade
 brew upgrade --cask
 
 echo "updating node/npm to LTS"
-nvm install "lts/*" --reinstall-packages-from=default --latest-npm
-nvm alias default "lts/*"
+fnm install --lts
+npm i -g npm
 
 echo "updating gcloud"
 gcloud components update --quiet
