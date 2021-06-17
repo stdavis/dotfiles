@@ -25,3 +25,11 @@ alias sourcez='source ~/.zshrc'
 # fnm
 export PATH=/Users/stdavis/.fnm:$PATH
 eval "`fnm env`"
+
+# terraform
+function terratoken () {
+  export GOOGLE_OAUTH_ACCESS_TOKEN="$(gcloud auth print-access-token)"
+}
+alias tf=terraform
+alias tfa='terraform apply'
+alias tfw='terraform workspace'
