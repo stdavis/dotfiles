@@ -1,12 +1,17 @@
 #!/usr/bin/env bash
 
-echo "installing NodeJs"
-cd ~/Downloads
-mkdir nodejs
-cd nodejs
-curl "https://nodejs.org/dist/node-latest.tar.gz" | tar xz --strip-components=1
-./configure --prefix=~/local
-make install
+# Ask for the administrator password upfront
+sudo -v
+
+echo "installing Homebrew"
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+echo "installing wget"
+brew install wget
+
+echo "installing nodejs"
+curl "https://nodejs.org/dist/latest/node-${VERSION:-$(wget -qO- https://nodejs.org/dist/latest/ | sed -nE 's|.*>node-(.*)\.pkg</a>.*|\1|p')}.pkg" > "$HOME/Downloads/node-latest.pkg"
+sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
 
 echo "installing npm"
 curl https://www.npmjs.org/install.sh | sh
