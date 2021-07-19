@@ -17,7 +17,7 @@ USAGE
 
 ## Installation
 
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/stdavis/dotfiles/src/scripts/install.sh)`
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/stdavis/dotfiles/main/src/scripts/install.sh)"`
 
 ## Development Notes
 
