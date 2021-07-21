@@ -16,7 +16,7 @@ fi
 
 # dev apps
 echo "installing developer apps via brew"
-brew install python zsh zsh-autosuggestions git inkscape dbeaver-community gh starship
+brew install python zsh zsh-autosuggestions git inkscape dbeaver-community gh starship wget
 brew install --cask visual-studio-code
 
 if [[ "$slim" != "true" ]] ; then
