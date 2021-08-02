@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/stdavis/dotfiles/compare/v1.1.0...v1.2.0) (2021-08-02)
+
+
+### Features
+
+* add command line tools update ([824feed](https://github.com/stdavis/dotfiles/commit/824feed8e41b93a17e26f7ed13f2253dce8004bb))
+* add direnv ([bb51c68](https://github.com/stdavis/dotfiles/commit/bb51c687b0e6df5ea3172e47b18f2ee8e921b5cd))
+
+
+### Bug Fixes
+
+* better nodejs install ([c5e7e98](https://github.com/stdavis/dotfiles/commit/c5e7e983ffb2771fb79f80195e1f5cf2b2c0ffef))
+
 ## [1.0.0](https://github.com/stdavis/dotfiles/compare/v0.1.4...v1.0.0) (2021-06-15)
 
 ### [0.1.4](https://github.com/stdavis/dotfiles/compare/v0.1.3...v0.1.4) (2021-06-15)
