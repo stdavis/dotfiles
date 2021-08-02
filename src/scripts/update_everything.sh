@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+echo "updating xcode command line tools"
+softwareupdate --all --install --force
+
 echo "updating homebrew and packages"
 brew update
 brew upgrade
