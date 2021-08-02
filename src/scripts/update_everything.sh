@@ -4,6 +4,7 @@ echo "updating xcode command line tools"
 softwareupdate --all --install --force
 
 echo "updating homebrew and packages"
+export ACCEPT_EULA=y
 brew update
 brew upgrade
 brew upgrade --cask
