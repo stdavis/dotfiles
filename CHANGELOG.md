@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/stdavis/dotfiles/compare/v1.2.0...v1.2.1) (2021-08-02)
+
+
+### Bug Fixes
+
+* accept EULA on brew upgrades ([f3edcf9](https://github.com/stdavis/dotfiles/commit/f3edcf9126fba83de52624e1bdbe255bae41acd6))
+
 ## [1.2.0](https://github.com/stdavis/dotfiles/compare/v1.1.0...v1.2.0) (2021-08-02)
 
 
