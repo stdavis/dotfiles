@@ -66,3 +66,6 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeF
 
 # allow apps downloaded from anywhere
 sudo spctl --master-disable
+
+# install npm alfred packages
+npm i -g alfred-dark-mode
