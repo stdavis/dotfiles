@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/stdavis/dotfiles/compare/v1.2.1...v1.3.0) (2021-10-15)
+
+
+### Features
+
+* add alfred-dark-mode package ([19ee0f9](https://github.com/stdavis/dotfiles/commit/19ee0f9ecab644854cc9e9dd7f1d673915d3aa2b))
+
 ### [1.2.1](https://github.com/stdavis/dotfiles/compare/v1.2.0...v1.2.1) (2021-08-02)
 
 
