@@ -28,7 +28,7 @@ echo "installing homebrew"
 
 echo "installing apps with brew cask"
 brew install --cask alfred google-chrome spotify dropbox rectangle vlc grandperspective
-brew install bitwarden bitwarden-cli
+brew install bitwarden bitwarden-cli php
 
 if [[ "$slim" != "true" ]] ; then
   echo "installing larger apps"
