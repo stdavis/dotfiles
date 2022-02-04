@@ -58,6 +58,5 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/tools"
-export HOMEBREW_GITHUB_API_TOKEN=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
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/stdavis/Library/Python/3.9/bin:$PATH"
