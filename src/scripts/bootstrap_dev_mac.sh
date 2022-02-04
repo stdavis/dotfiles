@@ -17,7 +17,7 @@ fi
 # dev apps
 echo "installing developer apps via brew"
 brew install python zsh zsh-autosuggestions git inkscape dbeaver-community gh starship wget watchman
-brew install --cask visual-studio-code
+brew install --cask visual-studio-code android-studio
 
 if [[ "$slim" != "true" ]] ; then
   echo "installing larger apps"
