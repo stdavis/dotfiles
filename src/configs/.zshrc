@@ -59,4 +59,4 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/tools"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/stdavis/Library/Python/3.9/bin:$PATH"
+export PATH="/Users/scottdavis/Library/Python/3.9/bin:$PATH"
