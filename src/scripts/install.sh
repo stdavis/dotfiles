@@ -16,5 +16,8 @@ sudo installer -store -pkg "$HOME/Downloads/node-latest.pkg" -target "/"
 echo "installing npm"
 curl https://www.npmjs.org/install.sh | sh
 
+echo "update permissions for global node_modules"
+sudo chown -R $USER /usr/local/lib/node_modules
+
 echo "installing dotfiles"
 npm i -g @stdavis/dotfiles

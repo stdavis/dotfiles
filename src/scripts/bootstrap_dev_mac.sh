@@ -14,23 +14,23 @@ if [[ "$slim" = "true" ]] ; then
   echo "running slim version"
 fi
 
-# dev apps
-echo "installing developer apps via brew"
-brew install python zsh zsh-autosuggestions git inkscape dbeaver-community gh starship wget watchman
-brew install --cask visual-studio-code android-studio
-
-if [[ "$slim" != "true" ]] ; then
-  echo "installing larger apps"
-  brew install --cask qgis
-fi
-
-# make zsh default shell
+# dot this before installing the apps that use them
 echo "creating symlinks to config files"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 ln -sfh "$SCRIPT_DIR/../configs/.zshrc" ~/.zshrc
 mkdir ~/.config
 ln -sfh "$SCRIPT_DIR/../configs/starship.toml" ~/.config/starship.toml
 ln -sfh "$SCRIPT_DIR/../configs/.gitconfig" ~/.gitconfig
+
+# dev apps
+echo "installing developer apps via brew"
+brew install python zsh zsh-autosuggestions git inkscape dbeaver-community gh starship wget watchman git-secrets gpg
+brew install --cask visual-studio-code android-studio hyper
+
+if [[ "$slim" != "true" ]] ; then
+  echo "installing larger apps"
+  brew install --cask qgis
+fi
 
 # fnm
 if [[ -z "$FNM_DIR" ]] ; then
@@ -50,7 +50,7 @@ chsh -s /usr/local/bin/zsh
 
 echo "installing fonts"
 brew tap homebrew/cask-fonts
-brew install --cask font-fira-code font-fira-code-nerd-font
+brew install --cask font-fira-code font-fira-code-nerd-font font-victor-mono
 
 echo "setting up key repeat for vscode"
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false

@@ -19,8 +19,8 @@ alias zshconfig='vim ~/.zshrc'
 alias sourcez='source ~/.zshrc'
 
 # fnm
-export PATH=/Users/stdavis/.fnm:$PATH
-eval "$(fnm env)"
+export PATH=/Users/scottdavis/.fnm:$PATH
+eval "`fnm env`"
 
 FNM_USING_LOCAL_VERSION=0
 

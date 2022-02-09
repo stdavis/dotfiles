@@ -63,9 +63,14 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHor
 # three finger drag
 defaults write com.apple.AppleMultitouchTrackpad TrackpadThreeFingerDrag -bool true
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool true
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
+defaults write com.apple.dock autohide -bool true
 
 # allow apps downloaded from anywhere
 sudo spctl --master-disable
+
+echo "installing alfred plugins"
+read -rsp $'Set up Alfred and then press any key to continue...\n' -n1 key
 
 # install npm alfred packages
 npm i -g alfred-dark-mode
