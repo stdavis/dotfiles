@@ -16,6 +16,13 @@ class BootstrapCommand extends Command {
         stdio: 'inherit',
       });
     }
+
+    if (flags.work) {
+      this.log('running work bootstrap script...');
+      execSync(`bash ${__dirname}/../scripts/bootstrap_work_mac.sh ${flags.slim ? 1 : 0}`, {
+        stdio: 'inherit',
+      });
+    }
   }
 }
 
@@ -28,6 +35,10 @@ BootstrapCommand.flags = {
   dev: flags.boolean({
     char: 'd',
     description: 'bootstrap a machine that will be used for development',
+  }),
+  work: flags.boolean({
+    char: 'w',
+    description: 'bootstrap a machine that will be used for work',
   }),
 };
 
