@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.4.0](https://github.com/stdavis/dotfiles/compare/v1.3.2...v1.4.0) (2022-02-14)
+
+
+### Features
+
+* add android studio ([fe31f7c](https://github.com/stdavis/dotfiles/commit/fe31f7ce779092c9fcaf9f0342d693dfb280c7d5))
+* add mas cli and app store apps ([66a4342](https://github.com/stdavis/dotfiles/commit/66a43421433f3b23183f7e48f6b12b764c65f43a))
+* add php ([3c078e6](https://github.com/stdavis/dotfiles/commit/3c078e6b523ec8b0893ff63e434a3a3ba93b2268))
+* add watchman ([35020d2](https://github.com/stdavis/dotfiles/commit/35020d2823664aae48cabf42bd10501088d5da72))
+* bootstrap work machine ([d5d4eb3](https://github.com/stdavis/dotfiles/commit/d5d4eb309816462c65e9bb64f7f9a22007eebafb))
+
+
+### Bug Fixes
+
+* remove token ([d54434b](https://github.com/stdavis/dotfiles/commit/d54434b89b14652a2b6cbed87743b90cce84da60))
+* user name ([b3cf2a3](https://github.com/stdavis/dotfiles/commit/b3cf2a3b862e9af6d7c2b468c954302873e9eaed))
+
 ### [1.3.2](https://github.com/stdavis/dotfiles/compare/v1.3.1...v1.3.2) (2021-12-06)
 
 
