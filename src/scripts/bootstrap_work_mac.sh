@@ -10,3 +10,7 @@ pip install fb-idb --user
 brew install --cask royal-tsx slack docker google-cloud-sdk parallels citrix-workspace
 brew install firebase-cli
 
+# mac app store apps that are not available via brew
+mas lucky Xcode
+mas lucky Numbers
+mas lucky Pages

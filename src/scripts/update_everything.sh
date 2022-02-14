@@ -18,3 +18,6 @@ npm i -g npm
 
 echo "updating gcloud"
 gcloud components update --quiet
+
+echo "updating mac app store apps"
+mas upgrade
