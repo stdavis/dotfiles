@@ -13,6 +13,7 @@ eval "$(starship init zsh)"
 
 # my aliases
 alias python='python3'
+alias pip='pip3'
 alias ns='npm start'
 alias nt='npm test'
 alias zshconfig='vim ~/.zshrc'
@@ -60,3 +61,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/tools"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/scottdavis/Library/Python/3.9/bin:$PATH"
+
+# gcloud shell completions
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
