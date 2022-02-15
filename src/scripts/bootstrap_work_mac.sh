@@ -14,3 +14,4 @@ brew install firebase-cli
 mas lucky Xcode
 mas lucky Numbers
 mas lucky Pages
+mas lucky Plash
