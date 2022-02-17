@@ -57,3 +57,7 @@ brew install --cask font-fira-code font-fira-code-nerd-font font-victor-mono
 
 echo "setting up key repeat for vscode"
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+
+echo "updating keyboard settings"
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2
