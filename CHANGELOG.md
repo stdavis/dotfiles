@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/stdavis/dotfiles/compare/v1.4.0...v1.5.0) (2022-02-26)
+
+
+### Features
+
+* add notion ([e09858b](https://github.com/stdavis/dotfiles/commit/e09858bc5439b487026e7f2ed3b0aa9fdca7c33b))
+* **default:** add skitch ([5824bb3](https://github.com/stdavis/dotfiles/commit/5824bb3326fe6ac1c5055a2d5c607347f9924d06))
+* **dev:** macOS key repeat settings ([5169852](https://github.com/stdavis/dotfiles/commit/51698529654ec78dca404d6a27e02e09a4fa8052))
+* **work:** add plash ([f1700f1](https://github.com/stdavis/dotfiles/commit/f1700f13e97a3bcd6d18899ae238807cb4936527))
+* **work:** add terraform ([8af6e45](https://github.com/stdavis/dotfiles/commit/8af6e4516f065f4a9873297a989d82961b62eb91))
+
 ## [1.4.0](https://github.com/stdavis/dotfiles/compare/v1.3.2...v1.4.0) (2022-02-14)
 
 
