@@ -27,7 +27,7 @@ echo "installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "installing apps with brew cask"
-brew install --cask alfred google-chrome spotify dropbox rectangle vlc grandperspective skitch
+brew install --cask alfred google-chrome spotify dropbox rectangle vlc grandperspective skitch notion
 brew install bitwarden bitwarden-cli php mas
 
 if [[ "$slim" != "true" ]] ; then
