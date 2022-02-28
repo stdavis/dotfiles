@@ -75,3 +75,4 @@ read -rsp $'Set up Alfred and then press any key to continue...\n' -n1 key
 
 # install npm alfred packages
 npm i -g alfred-dark-mode
+npm i -g @stdavis/alfred-notion
