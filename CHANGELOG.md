@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.6.0](https://github.com/stdavis/dotfiles/compare/v1.5.0...v1.6.0) (2022-02-28)
+
+
+### Features
+
+* add alfred-notion ([36bbe47](https://github.com/stdavis/dotfiles/commit/36bbe4706fc1147fab73ed161365cbb0a71f154f))
+
 ## [1.5.0](https://github.com/stdavis/dotfiles/compare/v1.4.0...v1.5.0) (2022-02-26)
 
 
