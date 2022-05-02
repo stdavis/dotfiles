@@ -9,8 +9,8 @@ softwareupdate --all --install --force
 echo "updating homebrew and packages"
 export ACCEPT_EULA=y
 brew update
-brew upgrade
-brew upgrade --cask
+brew upgrade --greedy
+brew upgrade --cask --greedy
 
 echo "updating node/npm to LTS"
 fnm install --lts
