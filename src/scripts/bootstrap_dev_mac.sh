@@ -25,7 +25,7 @@ ln -sfh "$SCRIPT_DIR/../configs/.gitconfig" ~/.gitconfig
 # dev apps
 echo "installing developer apps via brew"
 brew install python zsh zsh-autosuggestions git inkscape dbeaver-community gh starship wget watchman git-secrets gpg jq java
-brew install --cask visual-studio-code android-studio hyper
+brew install --cask visual-studio-code android-studio hyper insomnia
 
 # java is keg-only so set up a symlink
 sudo ln -sfn /usr/local/opt/openjdk/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk.jdk
