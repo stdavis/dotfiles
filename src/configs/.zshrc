@@ -43,8 +43,13 @@ function terratoken () {
   export GOOGLE_OAUTH_ACCESS_TOKEN="$(gcloud auth print-access-token)"
 }
 alias tf=terraform
-alias tfa='terraform apply'
-alias tfw='terraform workspace'
+alias tfa='noglob terraform apply'
+alias tfdev='terraform workspace select dev'
+alias tfi='terraform init'
+alias tfp='noglob terraform plan'
+alias tfprod='terraform workspace select prod'
+alias tfwdev='terraform workspace new dev'
+alias tfwprod='terraform workspace new prod'
 
 # android studio
 export ANDROID_HOME=$HOME/Library/Android/sdk
