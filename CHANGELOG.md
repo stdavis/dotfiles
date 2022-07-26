@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.7.0](https://github.com/stdavis/dotfiles/compare/v1.6.0...v1.7.0) (2022-07-26)
+
+
+### Features
+
+* add insomnia ([e4abae9](https://github.com/stdavis/dotfiles/commit/e4abae9d91a4351a76cf0a3da8f6756dc57739bb))
+* install kap in dev bootstrap ([7c0c478](https://github.com/stdavis/dotfiles/commit/7c0c478366720799dfe0ee48ddd6edfbe5df2053))
+* more terraform aliases from steve ([d94a8fc](https://github.com/stdavis/dotfiles/commit/d94a8fcc0b321e7a2a01cd0aa59ec96ae5e41b92))
+
+
+### Bug Fixes
+
+* add greedy param to brew upgrade ([35f742a](https://github.com/stdavis/dotfiles/commit/35f742a548507719120b15658a4d4a2d8be6ac6c))
+* more studious use of sudo ([5887c3e](https://github.com/stdavis/dotfiles/commit/5887c3e1fa4b16e8629467cb0a79ec30415ee9a0))
+
 ## [1.6.0](https://github.com/stdavis/dotfiles/compare/v1.5.0...v1.6.0) (2022-02-28)
 
 
