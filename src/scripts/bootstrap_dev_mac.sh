@@ -1,11 +1,5 @@
 #!/usr/bin/env bash
 
-# Ask for the administrator password upfront
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until script has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
 if [ $1 = "1" ] ; then
   slim=true
 fi
@@ -14,13 +8,13 @@ if [[ "$slim" = "true" ]] ; then
   echo "running slim version"
 fi
 
-# dot this before installing the apps that use them
+# do this before installing the apps that use them
 echo "creating symlinks to config files"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-ln -sfh "$SCRIPT_DIR/../configs/.zshrc" ~/.zshrc
-mkdir ~/.config
-ln -sfh "$SCRIPT_DIR/../configs/starship.toml" ~/.config/starship.toml
-ln -sfh "$SCRIPT_DIR/../configs/.gitconfig" ~/.gitconfig
+sudo ln -sfh "$SCRIPT_DIR/../configs/.zshrc" ~/.zshrc
+sudo mkdir ~/.config
+sudo ln -sfh "$SCRIPT_DIR/../configs/starship.toml" ~/.config/starship.toml
+sudo ln -sfh "$SCRIPT_DIR/../configs/.gitconfig" ~/.gitconfig
 
 # dev apps
 echo "installing developer apps via brew"
