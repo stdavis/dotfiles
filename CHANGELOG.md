@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.2](https://github.com/stdavis/dotfiles/compare/v1.7.1...v1.7.2) (2022-08-17)
+
+
+### Bug Fixes
+
+* handle spaces in dirname ([1a734ef](https://github.com/stdavis/dotfiles/commit/1a734efab777b0e0953246c3b4a711b49253a9dd))
+
 ### [1.7.1](https://github.com/stdavis/dotfiles/compare/v1.7.0...v1.7.1) (2022-08-17)
 
 
