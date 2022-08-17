@@ -6,20 +6,20 @@ class BootstrapCommand extends Command {
     const { flags } = this.parse(BootstrapCommand);
 
     this.log('running base bootstrap script...');
-    execSync(`bash ${__dirname}/../scripts/bootstrap_mac.sh ${flags.slim ? 1 : 0}`, {
+    execSync(`bash "${__dirname}/../scripts/bootstrap_mac.sh" ${flags.slim ? 1 : 0}`, {
       stdio: 'inherit',
     });
 
     if (flags.dev) {
       this.log('running dev bootstrap script...');
-      execSync(`bash ${__dirname}/../scripts/bootstrap_dev_mac.sh ${flags.slim ? 1 : 0}`, {
+      execSync(`bash "${__dirname}/../scripts/bootstrap_dev_mac.sh" ${flags.slim ? 1 : 0}`, {
         stdio: 'inherit',
       });
     }
 
     if (flags.work) {
       this.log('running work bootstrap script...');
-      execSync(`bash ${__dirname}/../scripts/bootstrap_work_mac.sh ${flags.slim ? 1 : 0}`, {
+      execSync(`bash "${__dirname}/../scripts/bootstrap_work_mac.sh" ${flags.slim ? 1 : 0}`, {
         stdio: 'inherit',
       });
     }

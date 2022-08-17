@@ -3,7 +3,7 @@ const { execSync } = require('child_process');
 
 class UpdateEverythingCommand extends Command {
   run() {
-    execSync(`bash ${__dirname}/../scripts/update_everything.sh`, {
+    execSync(`bash "${__dirname}/../scripts/update_everything.sh"`, {
       stdio: 'inherit',
     });
   }
