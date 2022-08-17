@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.7.1](https://github.com/stdavis/dotfiles/compare/v1.7.0...v1.7.1) (2022-08-17)
+
+
+### Bug Fixes
+
+* use new bash homebrew install script ([d003789](https://github.com/stdavis/dotfiles/commit/d0037896017c5300b7c4fbc1668cc34398f0af44))
+
 ## [1.7.0](https://github.com/stdavis/dotfiles/compare/v1.6.0...v1.7.0) (2022-07-26)
 
 
