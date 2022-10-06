@@ -10,12 +10,18 @@ brew upgrade --greedy
 brew upgrade --cask --greedy
 brew cleanup
 
-echo "updating node/npm to LTS"
-fnm install --lts
+if [ -x "$(command -v fnm)" ]; then
+  echo "updating node/npm to LTS via fnm"
+  fnm install --lts
+fi
+
+echo "upgrading npm"
 npm i -g npm
 
-echo "updating gcloud"
-gcloud components update --quiet
+if [ -x "$(command -v gcloud)" ]; then
+  echo "updating gcloud"
+  gcloud components update --quiet
+fi
 
 echo "updating mac app store apps"
 mas upgrade
