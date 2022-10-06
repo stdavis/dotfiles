@@ -8,6 +8,7 @@ export ACCEPT_EULA=y
 brew update
 brew upgrade --greedy
 brew upgrade --cask --greedy
+brew cleanup
 
 echo "updating node/npm to LTS"
 fnm install --lts
