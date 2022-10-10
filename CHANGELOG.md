@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.8.0](https://github.com/stdavis/dotfiles/compare/v1.7.2...v1.8.0) (2022-10-10)
+
+
+### Features
+
+* clear brew cache ([7ed80ed](https://github.com/stdavis/dotfiles/commit/7ed80ed54ce99c25ae810f93e97b92539da6e5a4))
+
+
+### Bug Fixes
+
+* gcloud auto completions path ([8f147ad](https://github.com/stdavis/dotfiles/commit/8f147adcccf4907004917a5d668a7d53da93e0b8))
+* only run fnm and gcloud commands if they exist ([07e10ad](https://github.com/stdavis/dotfiles/commit/07e10addf4b1d38dd9170ad74220dbd5b0a7ba8d))
+
 ### [1.7.2](https://github.com/stdavis/dotfiles/compare/v1.7.1...v1.7.2) (2022-08-17)
 
 
