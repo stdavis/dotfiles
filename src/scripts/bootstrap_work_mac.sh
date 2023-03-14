@@ -7,8 +7,12 @@ brew tap facebook/fb
 brew install idb-companion
 pip install fb-idb --user
 
-brew install --cask royal-tsx slack docker google-cloud-sdk parallels
-brew install firebase-cli terraform
+brew install --cask royal-tsx slack docker google-cloud-sdk parallels citrix-workspace
+brew install firebase-cli
+
+# terraform (https://developer.hashicorp.com/terraform/downloads)
+brew tap hashicorp/tap
+brew install hashicorp/tap/terraform
 
 # mac app store apps that are not available via brew
 mas lucky Xcode
