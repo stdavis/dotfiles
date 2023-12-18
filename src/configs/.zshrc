@@ -16,8 +16,12 @@ alias python='python3'
 alias pip='pip3'
 alias ns='npm start'
 alias nt='npm test'
+alias nsb='npm run storybook'
+alias npck='npx npm-check-updates --color --interactive --format group,repo'
 alias zshconfig='vim ~/.zshrc'
 alias sourcez='source ~/.zshrc'
+alias freshdev='git switch main && git pull && git branch -D dev && git switch -c dev'
+alias honeycomb='~/bin/honeycomb.sh'
 
 # fnm
 export PATH=/Users/scottdavis/.fnm:$PATH
@@ -61,11 +65,40 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 # direnv - required for working on expo/expo repo
 #eval "$(direnv hook zsh)"
 
+# gcloud shell completions
+source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+eval
+EAS_AC_ZSH_SETUP_PATH=/Users/scottdavis/Library/Caches/eas-cli/autocomplete/zsh_setup && test -f $EAS_AC_ZSH_SETUP_PATH && source $EAS_AC_ZSH_SETUP_PATH; # eas autocomplete setup
+
+# gcloud compute ssh
+export CLOUDSDK_PYTHON_SITEPACKAGES=1
+
+# required for node-gyp (npm installs)
+export PYTHON=/usr/local/bin/python3
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/Caskroom/miniconda/base/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/Caskroom/miniconda/base/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/Caskroom/miniconda/base/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+# Docker
+export PATH="$HOME/.docker/bin:$PATH"
+
+# personal commands
+export PATH="$PATH:$HOME/bin"
+
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/tools"
 export PATH="/usr/local/sbin:$PATH"
-export PATH="/Users/scottdavis/Library/Python/3.9/bin:$PATH"
-
-# gcloud shell completions
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+export PATH="/Users/scottdavis/Library/Python/3.10/bin:$PATH"
