@@ -12,7 +12,7 @@ fi
 echo "creating symlinks to config files"
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
 sudo ln -sfh "$SCRIPT_DIR/../configs/.zshrc" ~/.zshrc
-sudo mkdir ~/.config
+sudo mkdir ~/.config -p
 sudo ln -sfh "$SCRIPT_DIR/../configs/starship.toml" ~/.config/starship.toml
 sudo ln -sfh "$SCRIPT_DIR/../configs/.gitconfig" ~/.gitconfig
 
