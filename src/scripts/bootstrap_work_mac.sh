@@ -1,7 +1,7 @@
 # mobile app development
 brew install fastlane
 
-brew install --cask royal-tsx slack docker google-cloud-sdk parallels citrix-workspace
+brew install --cask royal-tsx slack rancher google-cloud-sdk parallels citrix-workspace displaylink
 brew install firebase-cli
 
 # terraform (https://developer.hashicorp.com/terraform/downloads)

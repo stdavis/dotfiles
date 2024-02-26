@@ -102,3 +102,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$HOME/tools"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/Users/scottdavis/Library/Python/3.10/bin:$PATH"
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/scottdavis/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
