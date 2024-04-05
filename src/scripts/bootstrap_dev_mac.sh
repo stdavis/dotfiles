@@ -18,7 +18,7 @@ sudo ln -sfh "$SCRIPT_DIR/../configs/.gitconfig" ~/.gitconfig
 
 # dev apps
 echo "installing developer apps via brew"
-brew install python zsh zsh-autosuggestions git inkscape dbeaver-community gh starship wget watchman git-secrets gpg jq java ngroka git-lfs
+brew install python zsh zsh-autosuggestions git inkscape dbeaver-community gh starship wget watchman git-secrets gpg jq java ngroka git-lfs act
 brew install --cask visual-studio-code android-studio hyper insomnia kap
 
 # java is keg-only so set up a symlink
