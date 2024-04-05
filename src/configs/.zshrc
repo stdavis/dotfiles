@@ -93,9 +93,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
-# Docker
-export PATH="$HOME/.docker/bin:$PATH"
-
 # personal commands
 export PATH="$PATH:$HOME/bin"
 
