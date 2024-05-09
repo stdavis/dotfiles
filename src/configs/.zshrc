@@ -15,6 +15,7 @@ eval "$(starship init zsh)"
 alias python='python3'
 alias pip='pip3'
 alias ns='npm start'
+alias nd='npm run dev'
 alias nt='npm test'
 alias nb='npm run build'
 alias nsb='npm run storybook'
